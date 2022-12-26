@@ -1,0 +1,207 @@
+@import url("./animation.css");
+@import url("./custom/cardCandidate.css");
+@import url("./custom/megamenu.css");
+@import url("./custom/breadCrumb.css");
+@import url("./custom/dataTable.css");
+@import url("./components/jobRequest/jobDetail.css");
+@import url("./components/jobRequest/jobFilter.css");
+@import url("./components/notification/index.css");
+@import url("./forbidden.css");
+html {
+    font-size: 14px;
+}
+
+*,
+input,
+textarea,
+select {
+    font-family: "Inter", "Quicksand", "Comforter", "JetBrains Mono", sans-serif;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--surface-b);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.layout-topbar {
+    background-color: var(--surface-a);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 1px rgb(0 0 0 / 25%);
+    border-bottom: 1px solid var(--surface-d);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.topbar-menu {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    margin: 0 0 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-menu li {
+    width: 40px;
+}
+
+.layout-sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    height: calc(100% - 60px);
+    background-color: var(--surface-a);
+    /* background-color: #041124; */
+    width: 220px;
+    border-right: 1px solid var(--surface-d);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+    transition: -webkit-transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+    transition: transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+    transition: transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99), -webkit-transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.layout-content {
+    margin-left: 220px;
+    padding-top: 60px;
+    max-width: 1140px;
+}
+
+.layout-content .content-section.implementation {
+    background-color: var(--surface-b);
+    color: var(--text-color);
+}
+
+.layout-content .content-section {
+    padding: 1.5rem;
+}
+
+.layout-content .card {
+    background: var(--surface-e);
+    padding: 1rem;
+    -webkit-box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.layout-sidebar .layout-menu {
+    padding: 0 1rem;
+    overflow-y: auto;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.button-change-theme {
+    position: fixed !important;
+    right: 0;
+    bottom: 10%;
+    width: 52px !important;
+    height: 52px;
+    line-height: 52px;
+    background-color: var(--primary-color);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mx-5 {
+    margin: 0 5rem;
+}
+
+.mr-5 {
+    margin-right: 5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.p-button.p-button-lg .p-button-icon {
+    font-size: 1.75rem;
+    animation: fa-spin 2s linear infinite;
+    -webkit-animation: fa-spin 2s linear infinite;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container {
+    margin: 0 3rem;
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.col-10 {
+    width: 60%;
+}
+
+.p-menu {
+    width: auto;
+}
+
+.p-dialog.p-confirm-dialog .p-confirm-dialog-icon {
+    color: var(--primary-color);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

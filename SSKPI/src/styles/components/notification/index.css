@@ -1,0 +1,56 @@
+.notifications {
+	position: absolute;
+	cursor: pointer;
+	top: 150%;
+	right: 0;
+	width: 25rem;
+	max-height: 30rem;
+	overflow-y: scroll;
+	background: var(--surface-e);
+	color: var(--text-color);
+	padding: 0.5rem;
+	box-shadow: 0 12px 28px 0 rgb(0 0 0 / 20%), 0 2px 4px 0 rgb(0 0 0 / 14%),
+		inset 0 0 0 1px rgb(0 0 0 / 12%);
+	border-radius: 6px;
+}
+
+.notifications p {
+	margin-top: 0;
+	margin-bottom: 0.4rem;
+	line-height: 1.4;
+}
+
+.notifications::-webkit-scrollbar {
+	width: 6px;
+	height: 8px;
+	background-color: #f5f5f5;
+}
+
+.notifications::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+	/* background-color: #202020; */
+}
+
+.notifications::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #f5f5f5;
+	border-radius: 6px;
+}
+
+.notification_item {
+	padding: 0.5rem;
+	border-radius: 4px;
+	border-bottom: 1px solid var(--surface-d);
+}
+
+.notification_item.seen {
+	opacity: 0.6;
+}
+
+.notification_item + .notification_item {
+	margin-top: 0.5rem;
+}
+
+.notification_item:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}

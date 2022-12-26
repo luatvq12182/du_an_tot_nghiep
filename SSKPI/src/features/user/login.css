@@ -1,0 +1,40 @@
+.login {
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-top: 10%;
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+		0 1px 3px 0 rgb(0 0 0 / 12%);
+	background-color: var(--surface-a);
+}
+
+.login .card {
+	min-width: 450px;
+}
+
+.login .card form {
+	margin-top: 2rem;
+}
+
+.login .card .p-field {
+	margin-bottom: 1.5rem;
+}
+
+.login .card h5 {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 960px) {
+	.login .card {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.login .card {
+		width: 100%;
+		min-width: 0;
+	}
+}

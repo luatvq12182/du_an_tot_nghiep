@@ -1,0 +1,2 @@
+export const FETCH_CONFIG = "FETCH_CONFIG";
+export const CHANGE_CONFIG = "CHANGE_CONFIG";

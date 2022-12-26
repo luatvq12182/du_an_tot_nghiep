@@ -1,0 +1,56 @@
+.jobDetail tr td,
+.jobDetail tr th {
+	padding: 8px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.jobDetail tr th {
+	min-width: 160px;
+}
+
+.jobDetail tr td p,
+.jobDetail tr td h1,
+.jobDetail tr td h2,
+.jobDetail tr td h3,
+.jobDetail tr td h4,
+.jobDetail tr td h5,
+.jobDetail tr td h6 {
+	margin-top: 0;
+	line-height: 1.6;
+}
+
+.jobDetail tr td ul {
+	margin: 0;
+	padding: 0;
+}
+
+.jobDetail tr td ul li {
+	list-style: none;
+	margin-bottom: 1em;
+}
+
+.label {
+	right: -75px;
+	top: 50px;
+	transform: rotateZ(45deg);
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	width: 300px;
+	text-align: center;
+	color: #fff;
+}
+
+.label.approval {
+	background-color: #83c44e;
+}
+
+.label.reject {
+	background-color: #dc3545;
+}
+
+.label.waiting {
+	background-color: var(--primary-color);
+}

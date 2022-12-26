@@ -1,0 +1,35 @@
+.p-megamenu.p-component {
+	background: transparent;
+	border: 1px solid transparent;
+}
+
+.p-megamenu.p-megamenu-horizontal {
+	margin-top: 60px;
+	background-color: var(--surface-a);
+}
+
+.p-megamenu-horizontal .p-megamenu-root-list {
+	width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+
+.p-megamenu.p-component.p-megamenu-vertical {
+	width: 100%;
+}
+
+.p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link {
+	padding: 1.25rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.87);
+	border-radius: 4px;
+	transition: none;
+	user-select: none;
+}
+
+.p-megamenu .p-megamenu-submenu-header {
+	padding: 0;
+}
